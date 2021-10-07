@@ -38,6 +38,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiVl/test-html-base.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
