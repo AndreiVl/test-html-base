@@ -1,0 +1,97 @@
+:root {
+	/* Spacers */
+	--space-4xs: 2px;
+	--space-3xs: 4px;
+	--space-2xs: 8px;
+	--space-xs: 12px;
+	--space-s: 16px;
+	--space-m: 20px;
+	--space-l: 24px;
+	--space-xl: 32px;
+	--space-2xl: 40px;
+	--space-3xl: 48px;
+	--space-4xl: 64px;
+	--space-5xl: 72px;
+	--space-6xl: 96px;
+
+	/* Width */
+	--modal-width-xll: 985px;
+	--img-width-s: 359px;
+	--btn-width-m: 170px;
+
+	/* height */
+	--btn-height-s: 40px;
+	--btn-height-m: 48px;
+
+	/* Typography */
+	--font-main: "Inter", sans-serif;
+	--font-second: "EurofontExtendedC", sans-serif;
+
+	/* Font sizes. */
+	--font-size-H1: 32px;
+	--font-size-P11: 11px;
+	--font-size-P12: 12px;
+	--font-size-T14: 14px;
+	--font-size-T16: 16px;
+
+	/* Line heights. */
+	--line-height-s: 13px;
+	--line-height-m: 18px;
+	--line-height-l: 24px;
+	--line-height-xl: 38px;
+
+	/* Colors */
+	--color-white: #ffffff;
+	--color-dark-200: #2a2c36;
+	--color-dark-300: #24252d;
+	--color-dark-950: #000000;
+	--color-orange-50: #ffbfad;
+	--color-orange-100: #f89a7f;
+	--color-orange-200: #f08160;
+	--color-orange-300: #df603b;
+	--color-orange-500: #bc401c;
+	--color-overlay: rgba(27, 27, 28, 0.6);
+
+	/* Icons */
+	--icon-s: 16px;
+	--icon-m: 24px;
+
+	/* Visual */
+	--box-shadow-modal-lighting: 0px 35px 71px -30px rgba(234, 101, 44, 0.14);
+	--gradient-primary-orange: linear-gradient(266.47deg, #c77326 10.33%, #981807 102.01%);
+	--gradient-bright-orange: linear-gradient(263.9deg, #c74a26 3.46%, #e24400 50.09%, #981807 105.19%);
+	--gradient-hovers-orange: linear-gradient(263.9deg, #ff693e 3.46%, #e24400 50.09%, #f36f24 105.19%);
+	--gradient-bright-dark: linear-gradient(266.47deg, #212124 10.33%, #4d4f56 53.78%, #1e2022 102.01%);
+
+	--opacity-0: 0;
+	--opacity-50: 0.5;
+	--opacity-100: 1;
+
+	--border-radius-none: 0px;
+	--border-radius-full: 50%;
+	--border-radius-4xs: 4px;
+	--border-radius-3xs: 6px;
+	--border-radius-2xs: 8px;
+	--border-radius-xs: 10px;
+	--border-radius-s: 12px;
+	--border-radius-m: 16px;
+	--border-radius-l: 18px;
+	--border-radius-xl: 20px;
+
+	--border-width-0: 0px;
+	--border-width-xs: 1px;
+	--border-width-s: 2px;
+
+	/* Positioning */
+	--z-index-auto: auto;
+	--z-index-0: 0;
+	--z-index-10: 10;
+	--z-index-20: 20;
+	--z-index-30: 30;
+	--z-index-40: 40;
+	--z-index-50: 50;
+	--z-index-max: 1000;
+
+	/* Animation */
+	--transition: 0.4s;
+}

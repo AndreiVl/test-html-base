@@ -1,0 +1,3 @@
+mixin btn-icon(data)
+	button.btn-icon(class!=attributes.class, data-id=data.data_id, id!=attributes.id, type=type, name=data.name, rel!=attributes.rel)
+		+icon(data.icon)

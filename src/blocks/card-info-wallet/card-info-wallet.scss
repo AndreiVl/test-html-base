@@ -1,0 +1,62 @@
+.card-info-wallet {
+	/* 2 Block model */
+	min-height: 132px;
+	box-sizing: border-box;
+	padding-top: var(--space-l);
+	padding-left: var(--space-l);
+	padding-right: var(--space-m);
+	padding-bottom: var(--space-m);
+
+	/* 4 Visual */
+	border: var(--border-width-s) solid var(--color-dark-300);
+	border-radius: var(--border-radius-xs);
+}
+.card-info-wallet--active {
+	/* 4 Visual */
+	border-color: var(--color-orange-500);
+	background: var(--gradient-bright-dark);
+}
+.card-info-wallet__body {
+	/* 1 Positioning */
+	position: relative;
+}
+.card-info-wallet__links {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.card-info-wallet__links-border {
+	/* 2 Block model */
+	width: var(--space-4xs);
+	height: var(--space-l);
+	margin-left: var(--space-xs);
+	margin-right: var(--space-xs);
+
+	/* 4 Visual */
+	background-color: var(--color-dark-300);
+}
+.card-info-wallet__icon {
+	/* 2 Block model */
+	display: flex;
+	width: var(--space-xl);
+	flex: 0 0 var(--space-xl);
+	margin-bottom: var(--space-2xs);
+}
+.card-info-wallet__icon-img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}
+.card-info-wallet__text {
+	/* 2 Block model */
+	padding-top: var(--space-4xs);
+
+	/* 4 Visual */
+	opacity: var(--opacity-50);
+}

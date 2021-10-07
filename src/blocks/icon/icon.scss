@@ -1,0 +1,17 @@
+.icon {
+	/* 2 Block model */
+	display: inline-block;
+	width: var(--icon-m);
+	height: var(--icon-m);
+}
+.icon--btn-close {
+	/* 2 Block model */
+	width: var(--icon-s);
+	height: var(--icon-s);
+
+	/* 4 Visual */
+	stroke: var(--color-orange-500);
+
+	/* 5 Animation */
+	transition: all var(--transition) ease;
+}

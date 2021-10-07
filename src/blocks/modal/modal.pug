@@ -1,0 +1,59 @@
+div.modal-overlay
+	div.modal-overlay__body
+		div.modal
+			div.modal__btn
+				button.btn-icon(type="button")
+					<svg width="18" height="19" viewBox="0 0 18 19" fill="none" class="icon icon--btn-close" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.6">
+						<line x1="16.6946" y1="17" x2="2" y2="2.30543" stroke-width="1.84615" stroke-linecap="round"/>
+						<line x1="2" y1="16.5561" x2="16.6946" y2="1.86157" stroke-width="1.84615" stroke-linecap="round"/>
+						</g>
+					</svg>
+
+			div.modal__body
+				div.modal__left
+					div.modal__img.modal__img--negative-margin
+						img(src="images/img-сaesar-otc-ring.png" alt="img-сaesar-otc-ring")
+					div.modal__desc
+						h1.h1.text-center.modal__title Welcome to DeFi OTC Marsbase
+						p.text-T14.text-center.modal__text Connect your wallet with one availiable providers or create a new wallet
+
+					div.modal__action
+						+btn({textPromo: 'Watch About Us'})(class="btn--promo")
+
+				div.modal__right
+					ul.modal__list-info
+						li.modal__list-info-item
+							+cardInfoWallet({
+								linkOne: 'How it work?', 
+								linkTwo: 'Install',
+								img: 'img-icon-metamask.png', 
+								imgAlt: 'metamask',
+								title: 'MetaMask', 
+								text: 'One of the most secure wallets with great flexibility'
+							})(class="card-info-wallet--active")
+
+						li.modal__list-info-item
+							div.card-info-wallet
+								div.card-info-wallet__body
+									div.card-info-wallet__links
+										a.text-T14.link(href="#") How it work?
+									div.card-info-wallet__desc
+										div.card-info-wallet__icon
+											img.card-info-wallet__icon-img(src="images/img-icon-wallet-connect.png" alt="wallet-connect")
+										h2.text-T16.text-bold WalletConnect
+										p.text-T14.card-info-wallet__text Connect with Rainbow, Trust, Argent and more
+
+						li.modal__list-info-item
+							+cardInfoWallet({
+								linkOne: 'How it work?', 
+								linkTwo: 'Install',
+								img: 'img-icon-сoinbase-wallet.png', 
+								imgAlt: 'сoinbase-wallet',
+								title: 'Coinbase Wallet', 
+								text: 'Connect with the best wallet for institutionals'
+							})
+
+					div.text-center
+						p.text-T14.modal__text Now to Ethereum?
+						a.text-T14.link(href="#") Learn more about wallets

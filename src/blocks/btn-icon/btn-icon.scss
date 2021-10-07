@@ -1,0 +1,28 @@
+.btn-icon {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	/* 3 Typography */
+	text-decoration: none;
+	vertical-align: middle;
+
+	/* 4 Visual */
+	cursor: pointer;
+	user-select: none;
+	background: none;
+	border: none;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all var(--transition);
+}
+.btn-icon:hover .icon {
+	/* 4 Visual */
+	stroke: var(--color-orange-100);
+}

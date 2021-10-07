@@ -1,0 +1,147 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	/* 3 Typography */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	/* 2 Block model */
+	display: block;
+}
+body {
+	/* 2 Block model */
+	height: 100%;
+
+	/* 3 Typography */
+	font-family: var(--font-main);
+	font-size: var(--font-size-T14);
+	font-weight: var(--font-weight-T14);
+	line-height: var(--line-height-l);
+	color: var(--color-white);
+
+	/* 4 Visual */
+	background-color: var(--color-dark-950);
+}
+ol,
+ul {
+	/* 4 Visual */
+	list-style: none;
+}
+blockquote,
+q {
+	/* 3 Typography */
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	/* 4 Visual */
+	content: "";
+	content: none;
+}
+table {
+	/* 4 Visual */
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper {
+	/* 2 Block model */
+	min-height: 100vh;
+	overflow: hidden;
+}

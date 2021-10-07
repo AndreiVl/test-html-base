@@ -1,0 +1,12 @@
+.link {
+	/* 3 Typography */
+	text-decoration: none;
+	color: var(--color-orange-500);
+
+	/* 5 Animation */
+	transition: all var(--transition) ease;
+}
+.link:hover {
+	/* 4 Visual */
+	color: var(--color-orange-200);
+}

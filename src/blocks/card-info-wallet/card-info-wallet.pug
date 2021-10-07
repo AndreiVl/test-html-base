@@ -1,0 +1,14 @@
+mixin cardInfoWallet(data)
+	div.card-info-wallet(class!=attributes.class)
+		div.card-info-wallet__body
+			div.card-info-wallet__links
+				a.text-T14.link(href="#")!=data.linkOne
+				span.card-info-wallet__links-border
+				a.text-T14.link(href="#")!=data.linkTwo
+			div.card-info-wallet__desc
+				div.card-info-wallet__icon
+					img.card-info-wallet__icon-img(src="images/"+data.img, alt=data.imgAlt)
+				h2.text-T16.text-bold!=data.title
+
+				if data.text
+					p.text-T14.card-info-wallet__text!=data.text

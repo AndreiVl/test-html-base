@@ -1,0 +1,49 @@
+.btn {
+	/* 1 Positioning */
+	position: relative;
+	z-index: var(--z-index-10);
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: var(--btn-height-s);
+	padding: 0 var(--space-xl);
+	margin: 0;
+
+	/* 3 Typography */
+	text-decoration: none;
+	vertical-align: middle;
+
+	/* 4 Visual */
+	cursor: pointer;
+	user-select: none;
+	background: var(--color-orange-500);
+	border: var(--border-width-s) solid var(--color-orange-500);
+	border-radius: var(--border-radius-2xs);
+	outline: none;
+
+	/* 5 Animation */
+	transition: all var(--transition) ease;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+	/* 4 Visual */
+	background: var(--color-orange-300);
+	border: var(--border-width-s) solid var(--color-orange-300);
+}
+.btn:focus {
+	/* 4 Visual */
+	background: var(--color-orange-300);
+	border: var(--border-width-s) solid var(--color-orange-50);
+}
+.btn:active {
+	/* 4 Visual */
+	background: var(--color-orange-200);
+	border: var(--border-width-s) solid var(--color-orange-200);
+}
+
+@import "--promo/--promo.scss";

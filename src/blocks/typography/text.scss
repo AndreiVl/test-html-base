@@ -1,0 +1,29 @@
+.text-left {
+	/* 3 Typography */
+	text-align: left;
+}
+.text-center {
+	/* 3 Typography */
+	text-align: center;
+}
+.text-right {
+	/* 3 Typography */
+	text-align: right;
+}
+.text-justify {
+	/* 3 Typography */
+	text-align: justify;
+}
+.text-uppercase {
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.text-bold {
+	/* 3 Typography */
+	font-weight: bold;
+}
+
+@import "./text-styles/h1.scss";
+@import "./text-styles/text-P12.scss";
+@import "./text-styles/text-T14.scss";
+@import "./text-styles/text-T16.scss";
