@@ -1,0 +1,116 @@
+.input {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.input label {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: var(--font-main);
+	font-size: var(--font-size-14);
+	font-weight: normal;
+	line-height: var(--line-height-xl);
+	color: var(--color-dark-50);
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.input__body {
+	/* 2 Block model */
+	display: inline-flex;
+}
+.input input {
+	/* 2 Block model */
+	width: 100%;
+	padding: var(--space-xs) var(--space-s);
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: var(--font-main);
+	font-size: var(--font-size-14);
+	font-weight: normal;
+	line-height: var(--line-height-xl);
+	color: var(--color-white);
+
+	/* 4 Visual */
+	border: var(--border-width-s) solid var(--color-dark-200);
+	border-radius: var(--border-radius-2xs);
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.input input::-webkit-input-placeholder {
+	/* 3 Typography */
+	color: var(--color-dark-50);
+}
+.input input::-moz-placeholder {
+	/* 3 Typography */
+	color: var(--color-dark-50);
+	text-overflow: ellipsis;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.input input:-moz-placeholder {
+	/* 3 Typography */
+	color: var(--color-dark-50);
+	text-overflow: ellipsis;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.input input:-ms-input-placeholder {
+	/* 3 Typography */
+	color: var(--color-dark-50);
+	text-overflow: ellipsis;
+}
+.input input[placeholder] {
+	/* 3 Typography */
+	text-overflow: ellipsis;
+}
+// .input input:hover {
+// 	/* 4 Visual */
+// 	border: var(--border-width-s) solid var(--color-orange-100);
+// }
+// .input input:active {
+// 	/* 4 Visual */
+// 	border: var(--border-width-s) solid var(--color-orange-100);
+// }
+.input input:focus {
+	/* 4 Visual */
+	border: var(--border-width-s) solid var(--color-orange-100);
+}
+.input__error {
+	/* 1 Positioning */
+	position: absolute;
+	left: var(--space-3xs);
+	bottom: calc(-1 * var(--space-s));
+
+	/* 3 Typography */
+	color: var(--color-red-400);
+}
+// .input input:disabled {
+// 	/* 3 Typography */
+// 	color: gray;
+
+// 	/* 4 Visual */
+// 	cursor: not-allowed;
+// 	background-color: #ffffff;
+// 	border: 3px solid pink;
+// }
+@import "--error/--error.scss";
+@import "--icon/--icon.scss";
+@import "--filled/--filled.scss";
+@import "--line/--line.scss";
+@import "--line-filled/--line-filled.scss";
+@import "input--line-error/input--line-error.scss";

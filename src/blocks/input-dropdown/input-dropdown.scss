@@ -1,0 +1,77 @@
+.input-dropdown {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	width: 100%;
+}
+.input-dropdown__input {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* 2 Block model */
+	padding: var(--space-xs) var(--border-radius-s);
+
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-dark-200);
+	border-radius: var(--border-radius-2xs);
+	cursor: pointer;
+
+	/* 5 Animation */
+	transition: all var(--transition);
+}
+.input-dropdown__input:hover {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-100);
+}
+.input-dropdown__text {
+	/* 2 Block model */
+	padding-right: var(--space-2xs);
+
+	/* 3 Typography */
+	color: var(--color-dark-50);
+
+	/* 5 Animation */
+	transition: var(--transition);
+}
+.input-dropdown__input:hover .input-dropdown__text {
+	/* 3 Typography */
+	color: var(--color-white);
+}
+.input-dropdown__input .icon {
+	/* 3 Typography */
+	stroke: var(--color-orange-500);
+}
+.input-dropdown__dropdown {
+	/* 1 Positioning */
+	position: absolute;
+	top: calc(var(--space-2xs) + var(--space-3xl));
+
+	/* 2 Block model */
+	width: 100%;
+	padding-top: var(--space-s);
+	padding-bottom: var(--space-s);
+
+	/* 4 Visual */
+	border-radius: var(--border-radius-2xs);
+	background-color: var(--color-dark-200);
+	visibility: hidden;
+	opacity: 0;
+}
+.input-dropdown__dropdown-item {
+	/* 2 Block model */
+	padding: var(--space-2xs) var(--space-s);
+
+	/* 4 Visual */
+	cursor: pointer;
+
+	/* 5 Animation */
+	transition: all var(--transition);
+}
+.input-dropdown__dropdown-item:hover {
+	/* 4 Visual */
+	background-color: var(--color-orange-500);
+}
+@import "--filled/--filled.scss";
+@import "--open/--open.scss";

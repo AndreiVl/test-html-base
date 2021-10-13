@@ -1,0 +1,77 @@
+.radio {
+	/* 2 Block model */
+	display: inline-flex;
+}
+.radio label {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-left: 30px;
+	padding-top: 2px;
+
+	/* 3 Typography */
+	text-align: left;
+
+	/* 6 Sundry */
+	cursor: pointer;
+}
+.radio input[type="radio"] {
+	/* 2 Block model */
+	display: none;
+}
+.radio input[type="radio"] + span {
+	/* 1 Positioning */
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	/* 2 Block model */
+	display: inline-flex;
+	width: var(--radio-width-m);
+	height: var(--radio-height-m);
+	box-sizing: border-box;
+
+	/* 4 Visual */
+	background-color: var(--color-dark-300);
+	border: var(--border-width-s) solid var(--color-dark-200);
+	border-radius: var(--border-radius-full);
+
+	/* 5 Animation */
+	transition: all var(--transition);
+}
+.radio input[type="radio"]:checked + span::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	/* 2 Block model */
+	display: flex;
+	width: var(--radio-width-before);
+	height: var(--radio-height-before);
+
+	/* 4 Visual */
+	content: "";
+	background-color: var(--color-orange-500);
+	border-radius: var(--border-radius-full);
+	transform: translate(-50%, -50%);
+	background-image: url(../images/icon--radio-check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.radio input[type="radio"]:hover + span {
+	/* 4 Visual */
+	background-color: var(--color-dark-800);
+	border: var(--border-width-s) solid var(--color-orange-800);
+}
+.radio input[type="radio"]:active + span {
+	/* 4 Visual */
+	background-color: var(--color-dark-800);
+	border: var(--border-width-s) solid var(--color-orange-800);
+}
+.radio input[type="radio"]:focus + span {
+	/* 4 Visual */
+	background-color: var(--color-dark-800);
+	border: var(--border-width-s) solid var(--color-orange-800);
+}

@@ -1,0 +1,13 @@
+.text-promo-14 {
+	/* 2 Block model */
+	font-family: var(--font-main);
+	font-size: var(--font-size-promo-14);
+	line-height: var(--line-height-xl);
+	color: var(--color-white);
+	font-weight: bold;
+
+	@media (min-width: 768px) {
+		/* 3 Typography */
+		line-height: var(--line-height-m);
+	}
+}

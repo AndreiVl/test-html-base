@@ -1,0 +1,11 @@
+mixin input-dropdown(data)
+	div.input-dropdown(class!=attributes.class)
+		div.input-dropdown__input
+			span.text-14.input-dropdown__text!=data.text
+			+icon('icon--arrow-down', 'icon--s input-dropdown__icon')
+
+		div.input-dropdown__dropdown
+			- for (var i = 0; i < data.items.length; i++)
+				div.input-dropdown__dropdown-item.text-14!=data.items[i]['value']
+
+

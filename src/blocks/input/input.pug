@@ -1,0 +1,15 @@
+mixin input(data)
+	div.input(class!=attributes.class)
+		if data.label_text
+			label(for!=data.name class!=attributes.label_class)!=data.label_text
+		div.input__body
+			if data.iconLeft
+				+icon(data.iconLeft, 'icon--s input__icon-left')
+
+			input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder disabled!=attributes.disabled)
+
+			if data.iconRight
+				+icon(data.iconRight,'icon--s input__icon-right')
+
+		if data.error
+			span.text-10.input__error!=data.error

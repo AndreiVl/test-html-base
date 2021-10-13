@@ -1,0 +1,21 @@
+.btn--connect {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-500);
+	background: var(--color-orange-500);
+}
+.btn--connect:hover {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-600);
+	background: var(--color-orange-600);
+}
+
+.btn--connect:focus {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-700);
+	background: var(--color-orange-700);
+}
+.btn--connect:active {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-200);
+	background: var(--color-orange-200);
+}

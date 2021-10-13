@@ -1,0 +1,25 @@
+.input--line input {
+	/* 2 Block model */
+	padding-left: var(--space-xl);
+
+	/* 4 Visual */
+	border: none;
+	border-bottom: var(--border-width-s) solid var(--color-dark-200);
+	border-radius: var(--border-radius-none);
+}
+.input--line .input__icon-left {
+	/* 1 Positioning */
+	left: 0;
+
+	/* 4 Visual */
+	stroke: var(--color-dark-50);
+}
+.input--line input:focus {
+	/* 4 Visual */
+	border: none;
+	border-bottom: var(--border-width-s) solid var(--color-orange-100);
+}
+input:focus .input__icon-left {
+	/* 4 Visual */
+	stroke: var(--color-white);
+}

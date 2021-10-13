@@ -1,0 +1,25 @@
+.btn--outline {
+	/* 4 Visual */
+	border-color: transparent;
+	border: var(--border-width-s) solid var(--color-btn-outline-border);
+	background: none;
+}
+.btn--outline:hover {
+	/* 4 Visual */
+	background: none;
+	border: var(--border-width-s) solid var(--color-orange-300);
+}
+.btn--outline:focus {
+	/* 4 Visual */
+	background: var(--color-orange-50);
+	border: var(--border-width-s) solid var(--color-orange-300);
+}
+.btn--outline:active {
+	/* 4 Visual */
+	background: none;
+	border: var(--border-width-s) solid var(--color-orange-300);
+}
+.btn--outline:active .btn__text {
+	/* 3 Typography */
+	color: var(--color-orange-400);
+}

@@ -1,0 +1,9 @@
+.input-dropdown--open {
+	/* 1 Positioning */
+	z-index: var(--z-index-20);
+}
+.input-dropdown--open .input-dropdown__dropdown {
+	/* 4 Visual */
+	visibility: visible;
+	opacity: 1;
+}

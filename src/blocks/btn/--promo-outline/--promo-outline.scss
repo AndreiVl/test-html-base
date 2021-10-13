@@ -1,0 +1,27 @@
+.btn--promo-outline {
+	/* 2 Block model */
+	height: var(--btn-height-m);
+
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-dark-300);
+	background: none;
+}
+.btn--promo-outline:hover {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-500);
+	background: none;
+}
+.btn--promo-outline:focus {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-500);
+	background: var(--gradient-button-background);
+}
+.btn--promo-outline:active {
+	/* 4 Visual */
+	border: var(--border-width-xs) solid var(--color-orange-500);
+	background: none;
+}
+.btn--promo-outline:active .btn__text {
+	/* 3 Typography */
+	color: var(--color-orange-500);
+}

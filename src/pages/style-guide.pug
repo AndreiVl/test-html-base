@@ -2,8 +2,146 @@ doctype html
 html(lang="en")
 	include include/head.pug
 	+head('Style Guide')
+	style(type="text/css")
+		.
+			.container {width: 100%; max-width: 1200px;margin: 0 auto; padding: 20px; box-sizing: border-box;}
+			.row { display: flex;flex-direction: row;flex-wrap: wrap;margin-bottom: 20px; gap: 20px;}
+
+
 
 	body
 		include ../blocks/mixins.pug
+		div.container
+			div.row
+				h1 Style Guide
+			div.row
+				h2 Checkbox
+			div.row
+				+checkbox({name: 'checkbox1'})
+			div.row
+				h2 Radio
+			div.row
+				+radio({name: 'radio1'})
+			div.row
+				h2 Toggle
+			div.row
+				+toggle({name: 'toogle'})
+			div.row
+				h2 Button default
+			div.row
+				+btn({text: 'Button'})
+			div.row
+				h2 Button ountline
+			div.row
+				+btn({text: 'Button'})(class="btn--outline")
+			div.row
+				h2 Button gradients
+			div.row
+				+btn({text: 'Button'})(class="btn--gradients")
+			div.row
+				h2 Button connect
+			div.row
+				+btn({text: 'Connect wallet'})(class="btn--connect")
+			div.row
+				h2 Button promo
+			div.row
+				+btn({textPromo: 'Button'})(class="btn--promo")
+			div.row
+				h2 Button promo outline
+			div.row
+				+btn({textPromo: 'Button'})(class="btn--promo-outline")
+			div.row
+				h2 Button promo outline gradients
+			div.row
+				h2 Input default
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text'})
+			div.row
+				h2 Input Filled
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', value: "Text filled"})(class="input--filled")
+			div.row
+				h2 Input error
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', value: "Text filled",error: 'Error text'})(class="input--error")
+			div.row
+				h2 Input Icon
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent'})(class="input--icon")
+			div.row
+				h2 Input Icon Error
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', value: "Text filled", error: 'Error text'})(class="input--error input--icon")
+			div.row
+				h2 Input Icons
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', iconRight: 'icon--procent'})(class="input--icon")
+			div.row
+				h2 Input line
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',})(class="input--icon input--line")
+			div.row
+				h2 Input line filled
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',})(class="input--icon input--line input--line-filled ")
+			div.row
+				h2 Input line error
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user', error: 'Error text'})(class="input--icon input--line input--line-error")
+			div.row
+				h2 Input dropdown
+			div.row
+				+input-dropdown({
+					text: 'Select',
+					items: [
+						{
+							value: 'Select items'
+						}
+					]
+				})
+			div.row
+				h2 Input dropdown filled
+			div.row
+				+input-dropdown({
+					text: 'Select',
+					items: [
+						{
+							value: 'Select items'
+						}
+					]
+				})(class="input-dropdown--filled")
+			div.row
+				h2 Input dropdown open
+			div.row
+				+input-dropdown({
+					text: 'Select',
+					items: [
+						{
+							value: 'Select items'
+						},
+						{
+							value: 'Select items 2 '
+						},
+						{
+							value: 'Select items 3 '
+						},
+						{
+							value: 'Select items 4 '
+						}
+					]
+				})(class="input-dropdown--open")
+			div.row
+				h2 Input dropdown filled
+			div.row
+				+input-dropdown({
+					text: 'Select',
+					items: [
+						{
+							value: 'Select items'
+						}
+					]
+				})(class="input-dropdown--filled")
+
+
 
 		include include/script.pug
