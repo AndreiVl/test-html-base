@@ -1,0 +1,10 @@
+.logo {
+	/* 2 Block model */
+	display: inline-flex;
+	width: var(--logo-width-m);
+}
+.logo img {
+	/* 1 Positioning */
+	display: block;
+	width: 100%;
+}
