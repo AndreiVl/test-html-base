@@ -1,0 +1,7 @@
+mixin cardShortWallet(data)
+	div.card-short-wallet(class!=attributes.class)
+		div.card-short-wallet__img
+			img.card-short-wallet__img(src="images/"+data.img, alt=data.imgAlt)
+		div.card-short-wallet__body
+			h3.text-16.text-bold.card-short-wallet__title!=data.title
+			p.text-14.card-short-wallet__text!=data.text

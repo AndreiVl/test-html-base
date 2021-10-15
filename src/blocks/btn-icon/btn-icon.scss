@@ -22,6 +22,11 @@
 	/* 5 Animation */
 	transition: all var(--transition);
 }
+.btn-icon .icon {
+	/* 4 Visual */
+	transition: all var(--transition);
+	stroke: var(--color-orange-500);
+}
 .btn-icon:hover .icon {
 	/* 4 Visual */
 	stroke: var(--color-orange-100);

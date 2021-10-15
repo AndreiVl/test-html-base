@@ -1,8 +1,9 @@
 mixin input-dropdown(data)
 	div.input-dropdown(class!=attributes.class)
-		div.input-dropdown__input
+		div.input-dropdown__header
 			span.text-14.input-dropdown__text!=data.text
 			+icon('icon--arrow-down', 'icon--s input-dropdown__icon')
+			input.input-dropdown__input(type="text" value="Select" name='select')
 
 		div.input-dropdown__dropdown
 			- for (var i = 0; i < data.items.length; i++)

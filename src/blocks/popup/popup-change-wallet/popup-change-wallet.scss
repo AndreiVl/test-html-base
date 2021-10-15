@@ -1,0 +1,101 @@
+.popup-change-wallet__change {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: var(--space-m);
+}
+.popup-change-wallet__change .btn--connect {
+	/* 2 Block model */
+	width: var(--btn-width-xs);
+	padding-left: var(--space-2xs);
+	padding-right: var(--space-2xs);
+}
+.popup-change-wallet__change .btn__text {
+	/* 3 Typography */
+	font-size: var(--font-size-promo-12);
+}
+.popup-change-wallet__hash {
+	/* 2 Block model */
+	margin-bottom: var(--space-s);
+}
+.popup-change-wallet__actions {
+	/* 2 Block model */
+	display: inline-flex;
+	flex-wrap: wrap;
+	column-gap: var(--space-m);
+	row-gap: var(--space-s);
+}
+.popup-change-wallet__transactions {
+	/* 2 Block model */
+	display: none;
+	padding: var(--space-m) var(--space-l) var(--space-l) var(--space-l);
+
+	/* 4 Visual */
+	background-color: var(--color-popup-transactions-bg);
+	border-radius: var(--border-radius-2xs);
+}
+.popup-change-wallet__desc {
+	/* 2 Block model */
+	padding: var(--space-s) var(--space-m);
+
+	/* 4 Visual */
+	background-color: var(--color-popup-desc-bg);
+	border-radius: var(--border-radius-2xs);
+}
+.popup-change-wallet__desc-text {
+	/* 3 Typography */
+	color: var(--color-orange-500);
+}
+.popup-change-wallet__transactions {
+	/* 2 Block model */
+	margin-top: var(--space-xl);
+}
+.popup-change-wallet__transactions-badge {
+	/* 1 Positioning */
+	position: relative;
+	z-index: var(--z-index-20);
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--color-popup-transactions-badge-height);
+	min-width: var(--color-popup-transactions-badge-width);
+	margin-left: var(--space-2xs);
+	padding: var(--space-3xs) var(--space-2xs);
+
+	/* 3 Typography */
+	color: var(--color-orange-500);
+}
+.popup-change-wallet__transactions-badge::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: var(--z-index-10);
+
+	/* 4 Visual */
+	display: block;
+
+	/* 4 Visual */
+	content: "";
+	background: var(--gradient-bright-orange);
+	opacity: var(--opacity-20);
+	border-radius: var(--border-radius-2xl);
+}
+.popup-change-wallet__transactions-list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	margin-top: var(--space-2xs);
+}
+.popup-change-wallet__transactions-items .loader {
+	/* 2 Block model */
+	width: var(--loader-width-xs);
+	height: var(--loader-height-xs);
+}

@@ -1,0 +1,53 @@
+.popup-connect-wallet .popup__close {
+	/* 1 Positioning */
+	top: var(--space-4xs);
+}
+.popup-connect-wallet__loader {
+	/* 2 Block model */
+	margin-bottom: var(--space-m);
+}
+.popup-connect-wallet__loader-img {
+	/* 2 Block model */
+	display: block;
+	width: var(--popup-connect-wallet-loader-width);
+	margin: 0 auto;
+	margin-bottom: var(--space-xs);
+
+	/* 5 Animation */
+	animation: 1s linear 0s normal none infinite running loader-rot;
+}
+@keyframes loader-rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.popup-connect-wallet--error {
+	/* 4 Visual */
+	background-color: var(--popup-connect-wallet-error-bg);
+}
+.popup-connect-wallet--error::before {
+	/* 4 Visual */
+	background: var(--color-red-500);
+}
+.popup-connect-wallet--error .popup-connect-wallet__loader-img {
+	/* 2 Block model */
+	width: var(--popup-connect-wallet-error-img-width);
+
+	/* 5 Animation */
+	animation: normal;
+}
+.popup-connect-wallet--error .popup__text {
+	/* 3 Typography */
+	color: var(--color-red-500);
+
+	/* 4 Visual */
+	opacity: var(--opacity-100);
+}
+.popup-connect-wallet--error .card-short-wallet {
+	/* 4 Visual */
+	background-color: var(--popup-connect-wallet-error-card-short-wallet-bg);
+}

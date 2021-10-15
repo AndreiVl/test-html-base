@@ -4,8 +4,21 @@
 
 	/* 2 Block model */
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	box-sizing: border-box;
+	gap: var(--space-xs);
 	width: 100%;
+	padding: var(--space-xs) var(--space-s);
+
+	/* 4 Visual */
+	border: var(--border-width-s) solid var(--color-dark-200);
+	border-radius: var(--border-radius-2xs);
+	background-color: transparent;
+	cursor: pointer;
+
+	/* 5 Animation */
+	transition: all 0.4s;
 }
 .input label {
 	/* 2 Block model */
@@ -29,8 +42,9 @@
 .input input {
 	/* 2 Block model */
 	width: 100%;
-	padding: var(--space-xs) var(--space-s);
+	padding: 0;
 	margin: 0;
+	flex: 1 1 auto;
 
 	/* 3 Typography */
 	font-family: var(--font-main);
@@ -40,14 +54,9 @@
 	color: var(--color-white);
 
 	/* 4 Visual */
-	border: var(--border-width-s) solid var(--color-dark-200);
-	border-radius: var(--border-radius-2xs);
-	background-color: transparent;
-	cursor: pointer;
+	border: none;
+	background: none;
 	outline: none;
-
-	/* 5 Animation */
-	transition: all 0.4s;
 }
 .input input::-webkit-input-placeholder {
 	/* 3 Typography */
@@ -86,9 +95,13 @@
 // 	/* 4 Visual */
 // 	border: var(--border-width-s) solid var(--color-orange-100);
 // }
-.input input:focus {
+.input__icon-left {
 	/* 4 Visual */
-	border: var(--border-width-s) solid var(--color-orange-100);
+	stroke: var(--color-dark-50);
+}
+.input__icon-right {
+	/* 4 Visual */
+	stroke: var(--color-orange-500);
 }
 .input__error {
 	/* 1 Positioning */
@@ -108,9 +121,14 @@
 // 	background-color: #ffffff;
 // 	border: 3px solid pink;
 // }
-@import "--error/--error.scss";
-@import "--icon/--icon.scss";
+
 @import "--filled/--filled.scss";
+@import "--focus/--focus.scss";
+@import "--error/--error.scss";
+@import "--icons/--icons.scss";
+@import "--icons-focus/--icons-focus.scss";
+@import "--icons-filled/--icons-filled.scss";
 @import "--line/--line.scss";
+@import "--line-focus/--line-focus.scss";
 @import "--line-filled/--line-filled.scss";
-@import "input--line-error/input--line-error.scss";
+@import "--line-error/--line-error.scss";

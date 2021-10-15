@@ -1,0 +1,9 @@
+mixin icon-link(data)
+	a.icon-link(href=data.url class!=attributes.class)
+		if data.iconLeft
+			+icon(data.iconLeft, data.iconModLeft)
+
+		span.text-14.icon-link__text!=data.text
+
+		if data.iconRight
+			+icon(data.iconRight, data.iconModRight)

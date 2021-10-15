@@ -1,0 +1,16 @@
+div.popup.popup--small.popup-connect-wallet
+	div.popup__top
+		div.popup__header
+			h2.text-promo-16.text-uppercase.text-center.popup__title Connect with a Wallet
+			+btn-icon({type: 'button', icon: 'icon--close', iconMod: 'icon--2xs'})(class="popup__close")
+	div.popup__body
+		div.popup__content
+			div.popup-connect-wallet__loader
+				img.popup-connect-wallet__loader-img(src="images/img-popup-loader.png" alt="loader")
+				p.text-14.text-center.popup__text Initializing...
+			div.popup-connect-wallet__wallet
+				+cardShortWallet({
+					img: 'img-metamask.png', imgAlt: 'MetaMask',
+					title: 'MetaMask',
+					text: 'Easy-to-use browser extension'
+				})

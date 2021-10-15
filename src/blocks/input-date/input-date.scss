@@ -1,0 +1,43 @@
+.input-date {
+	/* 1 Positioning */
+	position: relative;
+}
+.input-date__top input {
+	/* 2 Block model */
+	padding-right: var(--space-s);
+}
+.input-date__top .input__icon-left {
+	/* 4 Visual */
+	stroke: none;
+	fill: var(--color-dark-50);
+}
+.input-date__top .input--icons-focus .input__icon-left {
+	/* 4 Visual */
+	stroke: none;
+	fill: var(--color-orange-500);
+}
+.input-date__top .input--icons-filled {
+	/* 4 Visual */
+	border: var(--border-width-s) solid var(--color-orange-500);
+}
+.input-date__top .input--icons-filled .input__icon-left {
+	/* 4 Visual */
+	stroke: none;
+	fill: var(--color-orange-500);
+}
+.input-date__calendar {
+	/* 1 Positioning */
+	position: absolute;
+	top: var(--input-date-calendar-top);
+	left: 0;
+	z-index: var(--z-index-10);
+
+	/* 4 Visual */
+	visibility: hidden;
+	opacity: 0;
+}
+.input-date--open .input-date__calendar {
+	/* 4 Visual */
+	visibility: visible;
+	opacity: 1;
+}

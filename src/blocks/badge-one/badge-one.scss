@@ -1,0 +1,15 @@
+.badge-one {
+	/* 2 Block model */
+	display: inline-flex;
+	justify-content: center;
+	padding-left: var(--space-4xs);
+	padding-right: var(--space-4xs);
+
+	/* 4 Visual */
+	background-color: var(--color-orange-500);
+	border-radius: var(--border-radius-5xs);
+}
+.badge-one .text-12 {
+	/* 3 Typography */
+	line-height: var(--line-height-s);
+}

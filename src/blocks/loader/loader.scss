@@ -1,0 +1,22 @@
+.loader {
+	/* 2 Block model */
+	display: flex;
+	width: var(--loader-width-m);
+	height: var(--loader-height-m);
+}
+.loader img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+
+	/* 5 Animation */
+	animation: 1s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

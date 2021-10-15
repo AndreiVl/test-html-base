@@ -1,0 +1,14 @@
+.badge {
+	/* 2 Block model */
+	display: inline-flex;
+	padding-left: var(--space-xs);
+	padding-right: var(--space-xs);
+
+	/* 4 Visual */
+	background-color: var(--color-badge-bg) 20;
+	border-radius: var(--border-radius-5xs);
+}
+.badge--active {
+	/* 4 Visual */
+	background-color: var(--color-orange-500);
+}

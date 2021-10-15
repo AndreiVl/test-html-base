@@ -1,0 +1,16 @@
+.icon-text {
+	/* 2 Block model */
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
+}
+.icon-text--red .icon {
+	/* 4 Visual */
+	stroke: var(--color-red-500);
+	fill: transparent;
+}
+.icon-text--green .icon {
+	/* 4 Visual */
+	stroke: var(--color-green-500);
+	fill: transparent;
+}

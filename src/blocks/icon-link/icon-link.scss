@@ -1,0 +1,25 @@
+.icon-link {
+	/* 2 Block model */
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
+
+	/* 3 Typography */
+	text-decoration: none;
+	color: var(--color-orange-500);
+
+	/* 5 Animation */
+	transition: all var(--transition);
+}
+.icon-link .text-14 {
+	/* 3 Typography */
+	color: var(--color-orange-500);
+}
+.icon-link .icon {
+	/* 4 Visual */
+	stroke: var(--color-orange-500);
+}
+.icon-link:hover {
+	/* 4 Visual */
+	opacity: var(--opacity-50);
+}

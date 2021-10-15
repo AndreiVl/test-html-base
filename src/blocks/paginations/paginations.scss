@@ -1,0 +1,44 @@
+.paginations__list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-2xs);
+}
+.paginations__link {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--paginations-item-width-m);
+	height: var(--paginations-item-width-m);
+
+	/* 3 Typography */
+	text-decoration: none;
+	color: var(--color-dark-50);
+
+	/* 5 Animation */
+	transition: all var(--transition);
+}
+.paginations__link:hover {
+	/* 3 Typography */
+	color: var(--color-orange-700);
+}
+.paginations__link--current {
+	/* 3 Typography */
+	color: var(--color-white);
+
+	/* 4 Visual */
+	border-radius: var(--border-radius-full);
+	background-color: var(--color-orange-500);
+}
+.paginations__three-dots {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--paginations-item-width-m);
+	height: var(--paginations-item-width-m);
+
+	/* 3 Typography */
+	color: var(--color-dark-50);
+}

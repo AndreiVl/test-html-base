@@ -1,0 +1,9 @@
+mixin icon-text(data)
+	div.icon-text(class!=attributes.class)
+		if data.icon
+			+icon(data.icon, data.iconMod)
+
+		if data.img
+			+#{data.img.name}(data.img.arg)
+
+		span.text-14.icon-text__text!=data.text

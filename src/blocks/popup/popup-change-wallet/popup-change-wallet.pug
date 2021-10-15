@@ -1,0 +1,53 @@
+div.popup.popup--small.popup-change-wallet
+	div.popup__top
+		div.popup__header
+			h2.text-promo-20.popup__title Your wallet
+			+btn-icon({type: 'button', icon: 'icon--close', iconMod: 'icon--2xs'})(class="popup__close")
+	div.popup__body
+		div.popup__content
+			div.popup-change-wallet__change
+				p.text-14 Connected to MetaMask
+				+btn({text: 'Сhange wallet'})(class="btn--connect")
+
+			div.popup-change-wallet__hash
+				p.text-16.text-medium 0x89205A3A3b2....43e7
+
+			div.popup-change-wallet__actions
+				+icon-link({url: '#', text: 'Copy Address', iconRight: 'icon--copy', iconModRight: 'icon--2xs'})
+				+icon-link({url: '#', text: 'View on BscScan', iconRight: 'icon--external-link', iconModRight: 'icon--2xs'})
+
+			div.popup-change-wallet__transactions
+				p.text-14 Resent transactions
+					span.text-11.popup-change-wallet__transactions-badge 2
+				ul.popup-change-wallet__transactions-list
+					li.popup-change-wallet__transactions-items
+						+icon-text({
+							img: {
+								name: 'loader',
+								arg: {
+
+								}
+							},
+							text: 'Reserve 223,313.03 ETH'
+						})
+					li.popup-change-wallet__transactions-items
+						+icon-text({
+							img: {
+								name: 'loader',
+								arg: {
+
+								}
+							},
+							text: 'Swap 223,313.03 ETH'
+						})
+					li.popup-change-wallet__transactions-items
+						+icon-text({icon: 'icon--x-circle-close', text: 'Swap 223,313.03 ETH', iconMod: 'icon--xs'})(class="icon-text--red")
+					li.popup-change-wallet__transactions-items
+						+icon-text({icon: 'icon--x-circle-check', text: 'Swap 223,313.03 ETH', iconMod: 'icon--xs'})(class="icon-text--green")
+
+		div.popup__content
+			+btn({text: 'Log out'})(class="btn--outline btn--block")
+
+		div.popup__content
+			div.popup-change-wallet__desc
+				p.text-14.text-bold.popup-change-wallet__desc-text Every time after using Mars Base, we recommend you to disconnect the wallet from the decentrilized application!

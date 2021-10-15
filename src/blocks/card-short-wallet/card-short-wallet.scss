@@ -1,0 +1,26 @@
+.card-short-wallet {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-xs);
+	box-sizing: border-box;
+	padding: var(--space-l) var(--space-m);
+
+	/* 4 Visual */
+	background-color: var(--card-short-wallet--bg);
+	border-radius: var(--border-radius-2xs);
+}
+.card-short-wallet__img {
+	/* 2 Block model */
+	display: block;
+	width: var(--popup-connect-wallet-img-width);
+	flex: 0 0 var(--popup-connect-wallet-img-width);
+}
+.card-short-wallet__title {
+	/* 2 Block model */
+	margin-bottom: var(--space-4xs);
+}
+.card-short-wallet__text {
+	/* 4 Visual */
+	opacity: var(--opacity-50);
+}

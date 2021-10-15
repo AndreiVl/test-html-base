@@ -1,0 +1,9 @@
+mixin input-date(data)
+	div.input-date(class!=attributes.class)
+		div.input-date__top
+			+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Select date', iconLeft: 'icon--calendar', value: data.value})(class="input--icons " + data.inputClass +"")
+		div.input-date__calendar
+			include ../calendar/calendar.pug
+
+
+

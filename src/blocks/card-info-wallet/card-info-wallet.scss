@@ -2,10 +2,7 @@
 	/* 2 Block model */
 	min-height: 132px;
 	box-sizing: border-box;
-	padding-top: var(--space-l);
-	padding-left: var(--space-l);
-	padding-right: var(--space-m);
-	padding-bottom: var(--space-m);
+	padding: var(--space-m);
 
 	/* 4 Visual */
 	border: var(--border-width-s) solid var(--color-dark-300);
@@ -30,16 +27,30 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	gap: var(--space-l);
 }
-.card-info-wallet__links-border {
+.card-info-wallet__link {
+	/* 1 Positioning */
+	position: relative;
+}
+.card-info-wallet__link::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: calc(-1 * var(--space-xs));
+
 	/* 2 Block model */
+	display: block;
 	width: var(--space-4xs);
 	height: var(--space-l);
-	margin-left: var(--space-xs);
-	margin-right: var(--space-xs);
 
 	/* 4 Visual */
+	content: "";
 	background-color: var(--color-dark-300);
+}
+.card-info-wallet__link:first-child::before {
+	/* 2 Block model */
+	display: none;
 }
 .card-info-wallet__icon {
 	/* 2 Block model */

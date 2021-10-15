@@ -1,0 +1,38 @@
+div.popup.popup--small.popup-choose-wallet
+	div.popup__top
+		div.popup__header
+			h2.text-promo-20.popup__title Change wallet
+			+btn-icon({type: 'button', icon: 'icon--close', iconMod: 'icon--2xs'})(class="popup__close")
+	div.popup__body
+		div.popup__content
+			+cardInfoWallet({
+				linkOne: 'How it work?', 
+				linkTwo: 'Install',
+				img: 'img-metamask.png', 
+				imgAlt: 'metamask',
+				title: 'MetaMask', 
+				text: 'One of the most secure wallets with great flexibility'
+			})(class="card-info-wallet--active")
+
+		div.popup__content
+			+cardInfoWallet({
+				linkOne: 'How it work?', 
+				img: 'img-wallet-connect.png', 
+				imgAlt: 'wallet connect',
+				title: 'Wallet connect', 
+				text: 'Connect with Rainbow, Trust, Argent and more'
+			})
+
+		div.popup__content
+			+cardInfoWallet({
+				linkOne: 'How it work?', 
+				linkTwo: 'Install',
+				img: 'img-сoinbase-wallet.png', 
+				imgAlt: 'сoinbase-wallet',
+				title: 'Coinbase Wallet', 
+				text: 'Connect with the best wallet for institutionals'
+			})
+
+			div.popup-choose-wallet__bottom.text-center
+				p.text-14.popup__text Now to Ethereum?
+				a.text-14.link(href="#") Learn more about wallets

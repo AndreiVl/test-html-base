@@ -4,10 +4,11 @@ html(lang="en")
 	+head('Style Guide')
 	style(type="text/css")
 		.
-			.container {width: 100%; max-width: 1200px;margin: 0 auto; padding: 20px; box-sizing: border-box;}
+			.container {width: 100%; max-width: 1200px;margin: 0 auto; padding: 16px; box-sizing: border-box;}
 			.row { display: flex;flex-direction: row;flex-wrap: wrap;margin-bottom: 20px; gap: 20px;}
-
-
+			.row__item-title {margin-bottom: 10px;}
+			.row__content {display: flex;}
+			.row__item {flex: 1 1 auto;}
 
 	body
 		include ../blocks/mixins.pug
@@ -15,81 +16,218 @@ html(lang="en")
 			div.row
 				h1 Style Guide
 			div.row
-				h2 Checkbox
+				div.row__item
+					h2.row__item-title Checkbox
+					div.row__content
+						+checkbox({name: 'checkbox1'})
+				div.row__item
+					h2.row__item-title Radio
+					div.row__content
+						+radio({name: 'radio1'})
+				div.row__item
+					h2.row__item-title Toggle
+					div.row__content
+						+toggle({name: 'toogle'})
+				div.row__item
+					h2.row__item-title Badge
+					div.row__content
+						+badge({number: '25'})
+				div.row__item
+					h2.row__item-title Badge active
+					div.row__content
+						+badge({number: '25'})(class="badge--active")
+				div.row__item
+					h2.row__item-title Badge one
+					div.row__content
+						+badge-one({number: '3'})
+				div.row__item
+					h2.row__item-title Loader
+					div.row__content
+						+loader({})
 			div.row
-				+checkbox({name: 'checkbox1'})
+				div.row__item
+					h2.row__item-title Button paginations
+					div.row__content
+						include ../blocks/paginations/paginations.pug
+
 			div.row
-				h2 Radio
+				div.row__item
+					h2.row__item-title Button default
+					div.row__content
+						+btn({text: 'Button'})
+				div.row__item
+					h2.row__item-title Button ountline
+					div.row__content
+						+btn({text: 'Button'})(class="btn--outline")
+				div.row__item
+					h2.row__item-title Button gradients
+					div.row__content
+						+btn({text: 'Button'})(class="btn--gradients")
+				div.row__item
+					h2.row__item-title Button connect
+					div.row__content
+						+btn({text: 'Connect wallet'})(class="btn--connect")
+
 			div.row
-				+radio({name: 'radio1'})
+				div.row__item
+					h2.row__item-title Button promo
+					div.row__content
+						+btn({textPromo: 'Button'})(class="btn--promo")
+				div.row__item
+					h2.row__item-title Button promo outline
+					div.row__content
+						+btn({textPromo: 'Button'})(class="btn--promo-outline")
+				div.row__item
+					h2.row__item-title Button promo outline gradients
+					div.row__content
+
 			div.row
-				h2 Toggle
+				div.row__item
+					h2.row__item-title Popup Сhange wallet
+					div.row__content
+						include ../blocks/popup/popup-change-wallet/popup-change-wallet.pug
+
+				div.row__item
+					h2.row__item-title Popup Choose a wallet
+					div.row__content
+						include ../blocks/popup/popup-choose-wallet/popup-choose-wallet.pug
+
+				div.row__item
+					h2.row__item-title Popup Connect wallet
+					div.row__content
+						include ../blocks/popup/popup-connect-wallet/popup-connect-wallet.pug
+
+				div.row__item
+					h2.row__item-title Popup Connect wallet Error
+					div.row__content
+						include ../blocks/popup/popup-connect-wallet/popup-connect-wallet--error.pug
+
+				div.row__item
+					h2.row__item-title Popup Connect wallet Request
+					div.row__content
+						include ../blocks/popup/popup-connect-wallet/popup-connect-wallet--request.pug
+
 			div.row
-				+toggle({name: 'toogle'})
+				div.row__item
+					h2.row__item-title Popup Small
+					div.row__content
+						div.popup.popup--small
+							div.popup__top
+								div.popup__header
+									h2.text-promo-20.popup__title Title Small
+									+btn-icon({type: 'button', icon: 'icon--close', iconMod: 'icon--2xs'})(class="popup__close")
+							div.popup__body
+								div.popup__content
+									p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis delectus quo est inventore eum, sunt assumenda non sequi veniam soluta dolores libero accusantium voluptate, excepturi architecto tenetur deserunt ipsum ipsa.
+								div.popup__content
+									p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis delectus quo est inventore eum, sunt assumenda non sequi veniam soluta dolores libero accusantium voluptate, excepturi architecto tenetur deserunt ipsum ipsa.
+				div.row__item
+					h2.row__item-title Popup Medium
+					div.row__content
+						div.popup.popup--medium
+							div.popup__top
+								div.popup__header
+									h2.text-promo-20.popup__title Popup Medium
+									+btn-icon({type: 'button', icon: 'icon--close', iconMod: 'icon--2xs'})(class="popup__close")
+							div.popup__body
+								div.popup__content
+									p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis delectus quo est inventore eum, sunt assumenda non sequi veniam soluta dolores libero accusantium voluptate, excepturi architecto tenetur deserunt ipsum ipsa.
+
+				div.row__item
+					h2.row__item-title Popup Large-border
+					div.row__content
+						div.popup.popup--large.popup--border 
+							div.popup__top
+								div.popup__header
+									h2.text-promo-20.popup__title Popup Large-border
+									+btn-icon({type: 'button', icon: 'icon--close', iconMod: 'icon--2xs'})(class="popup__close")
+							div.popup__body
+								div.popup__content
+									p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis delectus quo est inventore eum, sunt assumenda non sequi veniam soluta dolores libero accusantium voluptate, excepturi architecto tenetur deserunt ipsum ipsa.
+								div.popup__content
+									p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis delectus quo est inventore eum, sunt assumenda non sequi veniam soluta dolores libero accusantium voluptate, excepturi architecto tenetur deserunt ipsum ipsa.
+
 			div.row
-				h2 Button default
-			div.row
-				+btn({text: 'Button'})
-			div.row
-				h2 Button ountline
-			div.row
-				+btn({text: 'Button'})(class="btn--outline")
-			div.row
-				h2 Button gradients
-			div.row
-				+btn({text: 'Button'})(class="btn--gradients")
-			div.row
-				h2 Button connect
-			div.row
-				+btn({text: 'Connect wallet'})(class="btn--connect")
-			div.row
-				h2 Button promo
-			div.row
-				+btn({textPromo: 'Button'})(class="btn--promo")
-			div.row
-				h2 Button promo outline
-			div.row
-				+btn({textPromo: 'Button'})(class="btn--promo-outline")
-			div.row
-				h2 Button promo outline gradients
-			div.row
-				h2 Input default
+				h2.row__item-title Input default
 			div.row
 				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text'})
 			div.row
-				h2 Input Filled
+				h2.row__item-title Input Focus
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text'})(class="input--focus")
+			div.row
+				h2.row__item-title Input Filled
 			div.row
 				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', value: "Text filled"})(class="input--filled")
 			div.row
-				h2 Input error
+				h2.row__item-title Input error
 			div.row
 				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', value: "Text filled",error: 'Error text'})(class="input--error")
 			div.row
-				h2 Input Icon
+				h2.row__item-title Input Icon
 			div.row
-				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent'})(class="input--icon")
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconRight: 'icon--procent'})
 			div.row
-				h2 Input Icon Error
+				h2.row__item-title Input Icon Error
 			div.row
-				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', value: "Text filled", error: 'Error text'})(class="input--error input--icon")
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconRight: 'icon--procent', value: "Text filled", error: 'Error text'})(class="input--error")
 			div.row
-				h2 Input Icons
+				h2.row__item-title Input Icons
 			div.row
-				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', iconRight: 'icon--procent'})(class="input--icon")
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', iconRight: 'icon--procent'})(class="input--icons")
 			div.row
-				h2 Input line
+				h2.row__item-title Input Icons Focus
 			div.row
-				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',})(class="input--icon input--line")
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', iconRight: 'icon--procent', value: 'Text'})(class="input--icons input--icons-focus")
 			div.row
-				h2 Input line filled
+				h2.row__item-title Input Icons Filled
 			div.row
-				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',})(class="input--icon input--line input--line-filled ")
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', iconRight: 'icon--procent', value: 'Text'})(class="input--icons input--icons-filled")
 			div.row
-				h2 Input line error
+				h2.row__item-title Input Icons Error
 			div.row
-				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user', error: 'Error text'})(class="input--icon input--line input--line-error")
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--procent', iconRight: 'icon--procent', value: 'Text',  error: 'Error text'})(class="input--error input--icons input--icons-filled")
 			div.row
-				h2 Input dropdown
+				h2.row__item-title Input Date
+			div.row
+				+input-date({})
+			div.row
+				h2.row__item-title Input Date Focus
+			div.row
+				+input-date({
+					value: 'Text',
+					inputClass: 'input--icons-focus'
+				})
+			div.row
+				h2.row__item-title Input Date Filled
+			div.row
+				+input-date({
+					value: '01.10.2020',
+					inputClass: 'input--icons-filled'
+				})
+
+			div.row
+				h2.row__item-title Input Date Open
+			div.row
+				+input-date({})(class="input-date--")
+			div.row
+				h2.row__item-title Input line
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',})(class="input--line")
+			div.row
+				h2.row__item-title Input Focus
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',  value: 'Text'})(class="input--line input--line-focus")
+			div.row
+				h2.row__item-title Input line filled
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user',  value: 'Text'})(class="input--line input--line-filled ")
+			div.row
+				h2.row__item-title Input line error
+			div.row
+				+input({ type: 'text', name: 'inputText', id: 'Input1', placeholder: 'Text', iconLeft: 'icon--user', value: 'Text',error: 'Error text'})(class="input--line input--line-filled input--line-error")
+			div.row
+				h2.row__item-title Input dropdown
 			div.row
 				+input-dropdown({
 					text: 'Select',
@@ -100,7 +238,7 @@ html(lang="en")
 					]
 				})
 			div.row
-				h2 Input dropdown filled
+				h2.row__item-title Input dropdown filled
 			div.row
 				+input-dropdown({
 					text: 'Select',
@@ -111,7 +249,7 @@ html(lang="en")
 					]
 				})(class="input-dropdown--filled")
 			div.row
-				h2 Input dropdown open
+				h2.row__item-title Input dropdown open
 			div.row
 				+input-dropdown({
 					text: 'Select',
@@ -131,7 +269,7 @@ html(lang="en")
 					]
 				})(class="input-dropdown--open")
 			div.row
-				h2 Input dropdown filled
+				h2.row__item-title Input dropdown filled
 			div.row
 				+input-dropdown({
 					text: 'Select',

@@ -4,10 +4,25 @@
 	width: var(--icon-m);
 	height: var(--icon-m);
 }
+.icon--2xs {
+	/* 2 Block model */
+	width: var(--icon-2xs);
+	height: var(--icon-2xs);
+}
+.icon--xs {
+	/* 2 Block model */
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+}
 .icon--s {
 	/* 2 Block model */
 	width: var(--icon-s);
 	height: var(--icon-s);
+}
+.icon--m {
+	/* 2 Block model */
+	width: var(--icon-m);
+	height: var(--icon-m);
 }
 .icon--btn-close {
 	/* 2 Block model */

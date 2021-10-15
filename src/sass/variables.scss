@@ -17,6 +17,7 @@
 	/* Width */
 	--modal-width-xll: 985px;
 	--img-width-s: 359px;
+	--btn-width-xs: 110px;
 	--btn-width-m: 170px;
 
 	/* height */
@@ -29,13 +30,24 @@
 	--checkbox-width-before: 11px;
 	--checkbox-height-before: 11px;
 
+	/* Popup */
+	--popup-width-s: 480px;
+	--popup-width-m: 550px;
+	--popup-width-l: 640px;
+
 	/* Radio */
 	--radio-width-m: 18px;
 	--radio-height-m: 18px;
 	--radio-width-before: 18px;
 	--radio-height-before: 18px;
+	--radio-width-after: 10px;
 	--radio-height-after: 10px;
-	--radio-height-after: 10px;
+
+	/* Loader */
+	--loader-width-xs: 14px;
+	--loader-height-xs: 14px;
+	--loader-width-m: 24px;
+	--loader-height-m: 24px;
 
 	/* Toggle */
 	--toggle-width-m: 32px;
@@ -45,6 +57,35 @@
 	--toggle-width-before: 14px;
 	--toggle-height-before: 14px;
 	--toggle-position-before-left: 13px;
+
+	/* Paginations */
+	--paginations-item-width-m: 28px;
+	--paginations-item-height-m: 28px;
+
+	/* Input-date */
+	--input-date-calendar-top: 56px;
+
+	/* Calendar */
+	--calendar-width-m: 250px;
+	--calendar-day-width-m: 32px;
+	--calendar-day-height-m: 32px;
+
+	/* Popup-change-wallet*/
+	--color-popup-desc-bg: #25130d;
+	--color-popup-transactions-bg: #202125;
+	--color-popup-transactions-bg: #202125;
+	--color-popup-transactions-badge-width: 22px;
+	--color-popup-transactions-badge-height: 16px;
+
+	/* Card-short-wallet*/
+	--card-short-wallet--bg: #202125;
+
+	/* Popup-connect-wallet*/
+	--popup-connect-wallet-loader-width: 56px;
+	--popup-connect-wallet-img-width: 48px;
+	--popup-connect-wallet-error-img-width: 64px;
+	--popup-connect-wallet-error-bg: #1c0002;
+	--popup-connect-wallet-error-card-short-wallet-bg: #2c191e;
 
 	/* Typography */
 	--font-main: "Inter", sans-serif;
@@ -63,7 +104,7 @@
 	--font-size-H3: 32px;
 	--font-size-16: 16px;
 	--font-size-14: 14px;
-	--font-size-12: 14px;
+	--font-size-12: 12px;
 	--font-size-11: 11px;
 	--font-size-10: 10px;
 
@@ -143,8 +184,10 @@
 	/* Colors Btn Border*/
 	--color-btn-outline-border: rgba(255, 255, 255, 0.1);
 
-	/* Gradient*/
+	/* Colors Badge Bg*/
+	--color-badge-bg: #661015;
 
+	/* Gradient*/
 	--gradient-primary-orange: linear-gradient(266.47deg, #c77326 10.33%, #981807 102.01%);
 	--gradient-bright-orange: linear-gradient(263.9deg, #c74a26 3.46%, #e24400 50.09%, #981807 105.19%);
 	--gradient-hovers-orange: linear-gradient(263.9deg, #ff693e 3.46%, #e24400 50.09%, #f36f24 105.19%);
@@ -164,18 +207,23 @@
 	--backdrop-filter-button: blur(15px);
 
 	/* Icons */
+	--icon-2xs: 14px;
 	--icon-xs: 16px;
 	--icon-s: 20px;
 	--icon-m: 24px;
 
 	/* Opacity */
 	--opacity-0: 0;
+	--opacity-15: 0.15;
+	--opacity-20: 0.2;
+	--opacity-30: 0.3;
 	--opacity-50: 0.5;
 	--opacity-100: 1;
 
 	/* Borders */
 	--border-radius-none: 0px;
 	--border-radius-full: 50%;
+	--border-radius-5xs: 2px;
 	--border-radius-4xs: 4px;
 	--border-radius-3xs: 6px;
 	--border-radius-2xs: 8px;
